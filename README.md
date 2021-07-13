@@ -73,7 +73,7 @@ run the `docker ps` command.
 
 #### I created a branch named start, and Commit my Dockerfile and other files used in the docker folder.
 
-#### I Updated Dockerfile from:
+#### I updated Dockerfile from:
  ```
  Welcome to SCA Cloud School Application
  ```
