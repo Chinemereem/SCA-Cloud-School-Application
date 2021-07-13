@@ -1,3 +1,5 @@
+
+Hello, In this project, I will be creating my first container with Docker. Here are the steps I followed:
 #### To create a web server:
 ```
 $ cd /path/to/python-docker
@@ -6,7 +8,7 @@ $ pip3 freeze > requirements.txt
 $ touch app.py
 ```
 
-### Added code into the app.py file.
+#### I added the following code into the app.py file.
 ```
 from flask import Flask
 app = Flask(__name__)
@@ -19,9 +21,8 @@ def assepython():
 ```
 $ python3 -m flask run 
 ```
-### Create a Dockerfile for Python
+#### Create a Dockerfile for Python
 ```
-syntax=docker/dockerfile:1
 
 FROM python:3.8-slim-buster
 
@@ -44,12 +45,7 @@ $ docker build --tag sca-asse .
 docker images
 ```
 
-#### Run My Image AS A Container: 
- ```
- $ docker run sca-asse
- ```
-
-#### Run image as a container
+#### Run image as a container with a publish tag and a default port
  ```
  $ docker run --publish 5000:5000 sca-asse
  ```
@@ -70,7 +66,7 @@ Welcome to SCA Cloud School Application
 docker run -d -p 5000:5000 sca-asse
 ```
 
-#### Display a list of containers. 
+#### To display a list of containers running on the machine.
 run the `docker ps` command.
 ``$ docker stop`` Stops a container.
 
@@ -92,7 +88,7 @@ in the `app.py` file.
 ```
 docker build -t sca-asse .
 ```
-Starts a new container using the updated code: 
+Start a new container using the updated code: 
 ```
 docker run -dp 5000:5000 sca-asse
 ```
@@ -100,7 +96,9 @@ throws an error?!
 
 #### Remove the old container.
 container ID `docker ps`.
+
 `$ docker stop <the-container-id>` stops the container.
+
 remove container `$ docker rm <the-container-id>`.
 
 #### Push to docker hub: 
@@ -110,4 +108,4 @@ $docker tag sca-asse:latest stephaniefe/sca-asse
 $ docker push stephaniefe/sca-asse
 ```
 
-#### Link to my Docker hub: https://hub.docker.com/r/stephaniefe/sca-asse
+#### Link to my Docker hub repository: https://hub.docker.com/r/stephaniefe/sca-asse
