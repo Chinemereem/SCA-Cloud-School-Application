@@ -71,9 +71,9 @@ run the `docker ps` command.
 ``$ docker stop`` Stops a container.
 
 
-#### Created a branch named start, and Commit my Dockerfile and other files used in the docker folder.
+#### I created a branch named start, and Commit my Dockerfile and other files used in the docker folder.
 
-#### Updated Dockerfile from:
+#### I Updated Dockerfile from:
  ```
  Welcome to SCA Cloud School Application
  ```
